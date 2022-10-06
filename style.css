@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    background-color: cadetblue;
+    width: 100%;
+
+}
+
+
+h1,
+h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    text-align: left;
+    padding: 20px;
+
+}
+
+#logo { 
+    position: absolute; 
+	top:0; 
+	left:0; 
+    
+}
+
+
+/* Header Area */
+
+
+header {
+    background-image: url(https://media.istockphoto.com/photos/beautiful-sky-with-white-clouds-picture-id182412483?k=20&m=182412483&s=612x612&w=0&h=axQ1-d_KRgxHIxDYQPG-yQuxjeIjXiQLDE8x5ltD-_0=);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    top: 0;   
+}
+
+
+header li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+header p {
+    text-align: center;
+    font-weight: bolder;
+}
+
+header img {
+    height: 80px;
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: rgb(173, 11, 11);
+}
+
+
+#hero h2, p {
+    text-align: center;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+ 
+/*  Main Area */
+
+main {
+    height: 100%; /*consider responsive height */
+    margin-bottom: 30px;
+}
+
+.img-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    height: 200px;
+    width: 300px;
+    padding: 50px;
+}
+
+/* Gallery Page Styling */
+
+.gallery-container {
+    display: grid;
+    grid-template-areas: 
+    "image1 image1 image2 image2 image3 image3"
+    "image1 image1 image2 image2 image3 image3"
+    "image1 image1 image4 image4 image3 image3"
+    "image1 image1 image4 image4 image3 image3"
+    "image5 image6 image6 image6 image3 image3"
+    "image7 image6 image6 image6 image8 image8"
+    "image9 image6 image6 image6 image8 image8";
+    grid-gap: 0.4rem;
+    grid-auto-rows: 1fr;
+    gap: 0.4rem;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 50vw;
+}
+
+.item {
+   min-height: 50px;
+}
+
+.item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.image2 {
+    grid-area: image2;
+    /* https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80 */
+}
+
+.image3 {
+    grid-area: image3;
+   /* https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80 */
+}
+
+.image4 {
+    grid-area: image4;
+   }
+
+.image5 {
+    grid-area: image5;
+}
+
+.image6 {
+    grid-area: image6;
+}
+    
+
+.image7 {
+    grid-area: image7;
+}
+
+.image8 {
+    grid-area: image8;
+}
+
+.image9 {
+    grid-area: image9;
+}
+
+/* Projects Area */
+.cards {
+    display: flex;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    width: 33%;
+}
+
+.card img {
+    width: 100;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3,
+.card p,
+.card a {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px){
+    .card {
+        background-color: #3333;
+        color: red;
+    }
+}
+
+ /* Skills Area */
+
+
+i {
+    font-size: 3rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#skills {
+    min-height: 500px;
+}
+
+.skill {
+    background-color: rgb(100, 148, 237);
+    padding: 2rem;
+    border: 1px solid gray;
+}
+
+.skills_group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.skills:nth-child(odd) {
+    background-color: darkgray;
+}
+
+progress[value] {
+    height: 1.5rem;
+    background: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: coral;
+    border-radius: 5px;
+    background-size: 35px 20px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: rgb(80, 255, 182);
+    border-radius: 7px;
+    background-size: 35px 20px;
+}
+
+i:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+
+/* Footer Area */
+
+footer {
+    background-color: cornflowerblue;
+    height: 300px;
+    width: 100%;
+    bottom: 0;
+    margin-top: 30px;
+}
+
+form {
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 280px;
+    height: 30px;
+    padding: 10px;
+    margin: 5px 150px 5px 100px;
+    border-radius: 3px;
+}
+
+
+button {
+    background-color: brown;
+    padding: 5px;
+    height: 30px;
+    width: 150px;   
+    border-radius: 3px;
+}
+
+textarea {
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px 150px 5px 100px;
+}
+
+footer li {
+    bottom: 0;
+    left: 0;
+}
+
+footer span {
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+/*   background-image: url(https://images.indianexpress.com/2021/09/GettyImages-sun-star-science-teacher-explains-1200.jpg); */
