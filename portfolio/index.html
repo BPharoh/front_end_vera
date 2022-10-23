@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png"  href="favicon.ico">
+    <link rel="icon" type="image/ico"  href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06a7bcdfc6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>My learning Porfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="#">Alexander Otulugbu</a></h1>
+        <div id="logo">
+          <a href="index.html">
+            <img src="assets/Group 1.png" alt="Official logo" />
+          </a>
+        </div>
+        <nav class="responsive">
+          <button id="mob_button"><span class="material-icons">menu</span></button>
+          <ul>
+            <li><a href=#about_me> About me</a></li>
+            <li><a href=#skills> Skills</a></li>
+            <li><a href=#projects> Projects</a></li>
+            <li><a href="gallery.html"> Gallery</a></li>
+            <li><a href=#contact> Contact Me</a></li>
+          </ul>
+        </nav>
+        <p>Welcome to my developer Portfolio</p>
+    </header> 
+    <main>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://cdn.ceoworld.biz/wp-content/uploads/2022/01/Pharaohs-Pyramids-and-Egypt-%E2%80%93-the-story-behind-Pyramids-1.jpg"
+            />
+            <h3>Pyramids</h3>
+            <p>HTML, CSS, Javascript</p>
+            <a href="#">see more</a>
+          </div>
+          <div class="card">
+            <img
+              src="https://skift.com/wp-content/uploads/2022/06/GettyImages-1208049833-scaled-e1654782364566-1024x682.jpg"
+            />
+            <h3>Taj Mahal</h3>
+            <p>what was this project about</p>
+            <a href="#">see more</a>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.english-heritage.org.uk/siteassets/home/visit/places-to-visit/stonehenge/history/virtual-tour/stonehenge-360-1.jpg?w=1440&h=612&mode=crop&scale=both&quality=100&anchor=NoFocus&WebsiteVersion=20220516171525"
+              alt="random image"
+            />
+            <h3>stonehenge</h3>
+            <p>what was this project about</p>
+            <a href="#">see more</a>
+          </div>
+        </div>
+      </section>
+      <section id="about_me">
+        <h2>About me</h2>
+        <img src="assets/aboutme.jpeg" alt="About me" class="img-1 wrapLeft"/>
+        <p>
+          Hello this is Alexander here from Nigeria 
+        </p>
+      </section>
+      <section id="skills">
+
+        <div class="container">
+
+            <h2>Skills</h2>
+
+            <div class="skills_group">
+
+            
+
+            <div class="skill">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML5</p>
+                <progress value="95" max="100">95%</progress>
+
+            </div>
+
+            <div class="skill">
+                <i class="fa-brands fa-css3"></i>
+                <p>CSS</p>
+                <progress value="75" max="100">75%</progress>
+
+            </div>
+
+            <div class="skill">
+                <i class="fa-brands fa-js"></i>
+                <p>JAVASCRIPT</p>
+                <progress value="45" max="100">45%</progress>
+
+            </div>
+
+            <div class="skill">
+                <i class="fa-duotone fa-chalkboard"></i>
+                <p>UI-DESIGNS</p>
+                <progress value="65" max="100">65%</progress>
+
+            </div>
+
+            <div class="skill">
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML5</p>
+              <progress value="95" max="100">95%</progress>
+
+          </div>
+
+          <div class="skill">
+              <i class="fa-brands fa-css3"></i>
+              <p>CSS</p>
+              <progress value="75" max="100">75%</progress>
+
+          </div>
+
+          <div class="skill">
+              <i class="fa-brands fa-js"></i>
+              <h3>JAVASCRIPT</h3>
+              <progress value="45" max="100">45%</progress>
+              <p> Level: Beginner </p>
+
+          </div>
+
+          <div class="skill">
+              <i class="fa-duotone fa-chalkboard"></i>
+              <p>UI-DESIGNS</p>
+              <progress value="65" max="100">65%</progress>
+
+          </div>
+
+        </div>
+
+        </div>
+
+    </section>
+  
+    </main>
+
+    <footer id="contact">
+      
+      <form>
+        <h3>Contact me</h3>
+  
+        <div>
+          <label for="name">Your names</label>
+          <input type="text" id="name" placeholder="Enter your full name here"/>
+        </div>
+        <div>
+          <label for="email">Your email</label>
+          <input type="email" id="email" placeholder="Enter your email address"/>
+        </div>
+        <div>
+          <label for="textbox">Message me</label>
+          <textarea name="textbox" id="textbox" cols="32" rows="4"></textarea>
+        </div>
+        <div>
+        <button type="button">SEND MESSAGE</button>
+         <p>&copy; Alexander Otulugbu - 2022.</p>
+         <button class="button" id="back_to_top">Top &#8593 </button>
+        </div>
+        <ul id="social">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+          <li><i class="fa-brands fa-github"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></i></li>
+        </ul>
+      </form>
+  </footer>
+  <script src="script.js"></script>
+  </body>
+</html>
+
+

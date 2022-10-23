@@ -1,0 +1,7 @@
+Assignment
+By using HTML and CSS, make a newsletter form. Pay attention to details. Try to make as similar as possible. 
+
+ 
+
+Post here your github link to solution.
+
